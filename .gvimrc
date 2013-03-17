@@ -8,6 +8,7 @@
 
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " syntax highlighting
+    execute pathogen#infect()
     set mouse=a                 " automatically enable mouse usage
     set mousehide               " hide the mouse cursor while typing
     scriptencoding utf-8
@@ -27,12 +28,12 @@
     set hidden                      " allow buffer switching without saving
 
     " Setting up the directories {
-        set backup                      " backups are nice ...
-        if has('persistent_undo')
-            set undofile                "so is persistent undo ...
-            set undolevels=1000         "maximum number of changes that can be undone
-            set undoreload=10000        "maximum number lines to save for undo on a buffer reload
-        endif
+    set backup                      " backups are nice ...
+    if has('persistent_undo')
+        set undofile                "so is persistent undo ...
+        set undolevels=1000         "maximum number of changes that can be undone
+        set undoreload=10000        "maximum number lines to save for undo on a buffer reload
+    endif
 
 " }
 
@@ -298,8 +299,8 @@
 " }
 
 " PowerLine Settings {
-    let g:Powerline_theme="skwp"
-    let g:Powerline_colorscheme="skwp"
+    " let g:Powerline_theme="skwp"
+    " let g:Powerline_colorscheme="skwp"
     let g:Powerline_symbols = 'fancy'
 " }
 
