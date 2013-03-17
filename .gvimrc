@@ -1,5 +1,6 @@
 " General {
     syntax enable
+    set nocompatible
     set background=dark
     colorscheme solarized
     set guifont=Menlo:h18 " Use 18pt Menbo
@@ -48,18 +49,6 @@
         set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
         set showcmd                 " show partial commands in status line and
                                     " selected characters/lines in visual mode
-    endif
-
-    if has('statusline')
-        set laststatus=2
-
-        " Broken down into easily includeable segments
-        set statusline=%<%f\    " Filename
-        set statusline+=%w%h%m%r " Options
-        set statusline+=%{fugitive#statusline()} "  Git Hotness
-        set statusline+=\ [%{&ff}/%Y]            " filetype
-        set statusline+=\ [%{getcwd()}]          " current dir
-        set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
     endif
 
     set backspace=indent,eol,start  " backspace for dummies
@@ -306,6 +295,12 @@
         let g:indent_guides_enable_on_vim_startup = 1
      " }
 
+" }
+
+" PowerLine Settings {
+    let g:Powerline_theme="skwp"
+    let g:Powerline_colorscheme="skwp"
+    let g:Powerline_symbols = 'fancy'
 " }
 
 " GUI Settings {
