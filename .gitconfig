@@ -1,5 +1,7 @@
 [alias]
     # View the SHA, description, and history graph of the latest 20 commits
+    name = wangshijun2010
+    emal = wangshijun2010@gmail.com
     log = log --pretty=oneline -n 20 --graph
     # View the current working tree status using the short format
     st = status
@@ -80,3 +82,7 @@
 
 [push]
     default = simple
+
+[user]
+    name = wangshijun2010
+    emal = wangshijun2010@gmail.com
