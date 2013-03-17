@@ -26,6 +26,10 @@ if exists("&undodir")
     set undodir=~/.vim/undo
 endif
 
+" theme
+set background=dark
+colorscheme solarized
+
 " Respect modeline in files
 set modeline
 set modelines=4

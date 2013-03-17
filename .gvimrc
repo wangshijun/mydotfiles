@@ -29,6 +29,12 @@
 
     " Setting up the directories {
     set backup                      " backups are nice ...
+    " Centralize backups, swapfiles and undo history
+    set backupdir=~/.vim/backups
+    set directory=~/.vim/swaps
+    if exists("&undodir")
+        set undodir=~/.vim/undo
+    endif
     if has('persistent_undo')
         set undofile                "so is persistent undo ...
         set undolevels=1000         "maximum number of changes that can be undone
@@ -50,6 +56,12 @@
         set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
         set showcmd                 " show partial commands in status line and
                                     " selected characters/lines in visual mode
+    endif
+
+    " Use relative line numbers
+    if exists("&relativenumber")
+        set relativenumber
+        au BufReadPost * set relativenumber
     endif
 
     set backspace=indent,eol,start  " backspace for dummies
