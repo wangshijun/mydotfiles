@@ -1,8 +1,6 @@
 " General {
-    syntax enable
     set nocompatible
     set laststatus=2
-    set background=dark
 
     set mouse=a                 " automatically enable mouse usage
     set mousehide               " hide the mouse cursor while typing
@@ -75,9 +73,6 @@
     set list
     set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
     set iskeyword+=-                " - as part of a word
-
-    execute pathogen#infect()
-    filetype plugin indent on   " Automatically detect file types.
 
 " }
 
@@ -214,6 +209,13 @@
     imap <down> <nop>
     imap <left> <nop>
     imap <right> <nop>
+
+    " insert mode shortcut
+    inoremap <C-h> <Left>
+    inoremap <C-j> <Down>
+    inoremap <C-k> <Up>
+    inoremap <C-l> <Right>
+    inoremap <C-d> <DELETE>
 " }
 
 " Plugins {
@@ -258,30 +260,32 @@
 " }
 
 " GUI Settings {
+    syntax on
+    filetype plugin indent on   " Automatically detect file types.
+
+    set background=dark
+    set t_Co=256                 " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
+
     let g:solarized_termtrans=1
     let g:solarized_contrast="high"
     let g:solarized_visibility="high"
+    let g:solarized_termcolors=256
+    colorscheme solarized
 
     " GVIM- (here instead of .gvimrc)
-    colorscheme solarized
     if has('gui_running')
         set guifont=Menlo:h18       " Use 18pt Menbo
-        set linespace=2             " Better line-height
         set guioptions-=T           " remove the toolbar
+        set linespace=2             " Better line-height
         set lines=40                " 40 lines of text instead of 24,
         if has('gui_macvim')
             set transparency=5          " Make the window slightly transparent
         endif
-    else
-        color darkbluefix
-        if &term == 'xterm' || &term == 'screen'
-            set t_Co=256                 " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
-        endif
-        "set term=builtin_ansi       " Make arrow and other keys work
     endif
 
+    execute pathogen#infect()
+
     " PowerLine Settings
-    let g:Powerline_symbols = 'fancy'
     let g:Powerline_symbols = 'fancy'
     let g:Powerline_colorscheme = 'solarized256'
 
