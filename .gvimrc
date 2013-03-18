@@ -47,6 +47,7 @@
     let g:solarized_termtrans=1
     let g:solarized_contrast="high"
     let g:solarized_visibility="high"
+
     set tabpagemax=15               " only show 15 tabs
     set showmode                    " display the current mode
     set cursorline                  " highlight current line
@@ -81,6 +82,16 @@
     set foldenable                  " auto fold code
     set list
     set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+
+    " PowerLine Settings
+    " let g:Powerline_theme="skwp"
+    " let g:Powerline_colorscheme="skwp"
+    let g:Powerline_symbols = 'fancy'
+
+    " tab styles
+    hi TabLineFill ctermfg=LightGreen ctermbg=235
+    hi TabLine ctermfg=245 ctermbg=236
+    hi TabLineSel ctermfg=254 ctermbg=24
 " }
 
 " Formatting {
@@ -182,29 +193,23 @@
     " Easier horizontal scrolling
     map zl zL
     map zh zH
+
+    " tabprevious/next
+    nmap <C-N> :tabnext<CR>
+    nmap <C-P> :tabprevious<CR>
+
+    " Disable arrow keys
+    map <up> <nop>
+    map <down> <nop>
+    map <left> <nop>
+    map <right> <nop>
+    imap <up> <nop>
+    imap <down> <nop>
+    imap <left> <nop>
+    imap <right> <nop>
 " }
 
 " Plugins {
-
-    " PIV {
-        let g:DisableAutoPHPFolding = 0
-        let g:PIVAutoClose = 0
-    " }
-
-    " Misc {
-        let g:NERDShutUp=1
-        let b:match_ignorecase = 1
-    " }
-
-    " Ctags {
-        set tags=./tags;/,~/.vimtags
-    " }
-
-    " AutoCloseTag {
-        " Make it so AutoCloseTag works for xml and xhtml files as well
-        au FileType xhtml,xml ru ftplugin/html/autoclosetag.vim
-        nmap <Leader>ac <Plug>ToggleAutoCloseMappings
-    " }
 
     " SnipMate {
         " Setting the author var
@@ -227,66 +232,6 @@
         let g:nerdtree_tabs_open_on_gui_startup=0
     " }
 
-    " Tabularize {
-        nmap <Leader>a= :Tabularize /=<CR>
-        vmap <Leader>a= :Tabularize /=<CR>
-        nmap <Leader>a: :Tabularize /:<CR>
-        vmap <Leader>a: :Tabularize /:<CR>
-        nmap <Leader>a:: :Tabularize /:\zs<CR>
-        vmap <Leader>a:: :Tabularize /:\zs<CR>
-        nmap <Leader>a, :Tabularize /,<CR>
-        vmap <Leader>a, :Tabularize /,<CR>
-        nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
-        vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
-     " }
-
-     " Session List {
-        set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
-        nmap <leader>sl :SessionList<CR>
-        nmap <leader>ss :SessionSave<CR>
-     " }
-
-     " Buffer explorer {
-        nmap <leader>b :BufExplorer<CR>
-     " }
-
-     " JSON {
-        nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
-     " }
-
-     " PyMode {
-        let g:pymode_lint_checker = "pyflakes"
-        let g:pymode_utils_whitespaces = 0
-     " }
-
-     " ctrlp {
-        let g:ctrlp_working_path_mode = 2
-        nnoremap <silent> <D-t> :CtrlP<CR>
-        nnoremap <silent> <D-r> :CtrlPMRU<CR>
-        let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            \ 'file': '\.exe$\|\.so$\|\.dll$' }
-
-        let g:ctrlp_user_command = {
-            \ 'types': {
-                \ 1: ['.git', 'cd %s && git ls-files'],
-                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-            \ },
-            \ 'fallback': 'find %s -type f'
-        \ }
-     "}
-
-     " TagBar {
-        nnoremap <silent> <leader>tt :TagbarToggle<CR>
-     "}
-
-     " PythonMode {
-     " Disable if python support not present
-        if !has('python')
-           let g:pymode = 1
-        endif
-     " }
-
      " Fugitive {
         nnoremap <silent> <leader>gs :Gstatus<CR>
         nnoremap <silent> <leader>gd :Gdiff<CR>
@@ -296,11 +241,6 @@
         nnoremap <silent> <leader>gp :Git push<CR>
      "}
 
-     " UndoTree {
-        nnoremap <Leader>u :UndotreeToggle<CR>
-        let g:undotree_SetFocusWhenToggle=1 " if undotree is opened, it is likely one wants to interact with it.
-     " }
-
      " indent_guides {
         set ts=4 sw=4 et
         let g:indent_guides_start_level = 2
@@ -308,12 +248,6 @@
         let g:indent_guides_enable_on_vim_startup = 1
      " }
 
-" }
-
-" PowerLine Settings {
-    " let g:Powerline_theme="skwp"
-    " let g:Powerline_colorscheme="skwp"
-    let g:Powerline_symbols = 'fancy'
 " }
 
 " GUI Settings {

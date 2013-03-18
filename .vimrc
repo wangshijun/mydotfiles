@@ -28,7 +28,12 @@ endif
 
 " theme
 set background=dark
-colorscheme solarized
+color darkbluefix
+
+" tab styles
+hi TabLineFill ctermfg=LightGreen ctermbg=235
+hi TabLine ctermfg=245 ctermbg=236
+hi TabLineSel ctermfg=254 ctermbg=24
 
 " Respect modeline in files
 set modeline
@@ -98,6 +103,13 @@ if has("autocmd")
     " Treat .json files as .js
     autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+" VIM Powerline
+set laststatus=2
+set background=dark
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_colorscheme = 'solarized256'
 
 " Pathogen related
 execute pathogen#infect()
