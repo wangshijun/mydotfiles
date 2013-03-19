@@ -2,7 +2,7 @@
     set nocompatible
     set laststatus=2
 
-    set mouse=a                 " automatically enable mouse usage
+    set mouse=v                 " automatically enable mouse usage
     set mousehide               " hide the mouse cursor while typing
     scriptencoding utf-8
     set encoding=utf-8 nobomb
