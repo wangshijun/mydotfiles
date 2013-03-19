@@ -63,7 +63,7 @@ get_git_branch() {
     # Get the short symbolic ref
     branch_name=$(git symbolic-ref --quiet --short HEAD 2> /dev/null) ||
     # If HEAD isn't a symbolic ref, get the short SHA
-    branch_name=$(git rev-parse --short HEAD 2> /dev/null) ||
+    branch_name=$(git rev-parse --abbrev-ref HEAD 2> /dev/null) ||
     # Otherwise, just give up
     branch_name="(unknown)"
 
