@@ -38,6 +38,3 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# ssh-keys
-ssh-add ~/.ssh/github/id_rsa 1>&- 2>&-
-ssh-add ~/.ssh/meituan/id_rsa 1>&- 2>&-
