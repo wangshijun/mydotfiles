@@ -139,6 +139,8 @@
     endif
 
     cmap Tabe tabe
+    cmap Tabm tabm
+    cmap Tabo tabo
 
     " Yank from the cursor to the end of the line, to be consistent with C and D.
     nnoremap Y y$
@@ -220,6 +222,12 @@
 
 " Plugins {
 
+    " SnipMate {
+        " Setting the author var
+        " If forking, please overwrite in your .vimrc.local file
+        let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
+    " }
+
      " Fugitive {
         nnoremap <silent> <leader>gs :Gstatus<CR>
         nnoremap <silent> <leader>gd :Gdiff<CR>
@@ -228,13 +236,6 @@
         nnoremap <silent> <leader>gl :Glog<CR>
         nnoremap <silent> <leader>gp :Git push<CR>
      "}
-
-     " indent_guides {
-        set ts=4 sw=4 et
-        let g:indent_guides_start_level = 2
-        let g:indent_guides_guide_size = 1
-        let g:indent_guides_enable_on_vim_startup = 1
-     " }
 
 " }
 
