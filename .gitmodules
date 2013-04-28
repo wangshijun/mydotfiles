@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/zencoding-vim"]
 	path = .vim/bundle/zencoding-vim
 	url = git://github.com/mattn/zencoding-vim.git
+[submodule ".vim/bundle/golden-view"]
+	path = .vim/bundle/golden-view
+	url = git://github.com/zhaocai/GoldenView.Vim.git
