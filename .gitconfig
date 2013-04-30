@@ -18,6 +18,7 @@
     go = checkout -B
     co = checkout
     # Show verbose output about tags, branches or remotes
+    br = branch
     tags = tag -l
     branches = branch -a
     remotes = remote -v
