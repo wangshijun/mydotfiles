@@ -23,7 +23,7 @@ vbell_msg "   Wuff  ----  Wuff!!  "
 # all termcap entries are now duplicated as terminfo entries.
 # only difference should be the slightly modified syntax, and check for
 # terminfo entries, that are already corected in the database.
-# 
+#
 # G0 	we have a SEMI-GRAPHICS-CHARACTER-MODE
 # WS	this sequence resizes our window.
 # cs    this sequence changes the scrollregion
@@ -70,7 +70,7 @@ termcap xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 terminfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 
 #
-# Do not use xterms alternate window buffer. 
+# Do not use xterms alternate window buffer.
 # This one would not add lines to the scrollback buffer.
 #termcap xterm|xterms|xs ti=\E7\E[?47l
 #terminfo xterm|xterms|xs ti=\E7\E[?47l
@@ -268,32 +268,32 @@ hardstatus alwayslastline '%{bW}%-w%{.wB}%n %t%{-}%+w %=%{.w}'
 #auto open tabs
 #1
 #chdir /home/wangshijun
-#screen -t Irssi 
+#screen -t Irssi
 #exec irssi
 
 #2
-chdir /home/sankuai/www.jsLib/yui/3.3.0/build/
-screen -t YUI3
+# chdir /home/sankuai/www.jsLib/yui/3.3.0/build/
+# screen -t YUI3
 
 #3
-chdir /home/wangshijun/dev/javascript
-screen -t jQuery
+# chdir /home/wangshijun/dev/javascript
+# screen -t jQuery
 
 #4
-chdir /home/wangshijun/mt
-screen -t Git 
+# chdir /home/wangshijun/mt
+# screen -t Git
 
 #4
-chdir /home/wangshijun/mt
-screen -t Develop 
+# chdir /home/wangshijun/mt
+# screen -t Develop
 
 #3
 #chdir /home/wangshijun/mtstat
-#screen -t stat 
+#screen -t stat
 #exec git checkout master
 
 #3
 #chdir /home/wangshijun
-#screen -t db 
-#exec db 
+#screen -t db
+#exec db
 
