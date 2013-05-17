@@ -34,9 +34,6 @@
         set undolevels=1000         "maximum number of changes that can be undone
         set undoreload=10000        "maximum number lines to save for undo on a buffer reload
     endif
-
-    let mapleader = ','
-
 " }
 
 " Vim UI {
@@ -91,6 +88,18 @@
     " Remove trailing whitespaces and ^M chars
     " autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml,css,js,html autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     " autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+    " Automatic commands
+    if has("autocmd")
+        " Enable file type detection
+        filetype on
+        " Treat .json files as .js
+        autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+    endif
+" }
+
+" Key (re)Mappings {
+
+    let mapleader = ','
 
     " Strip trailing whitespace (,ss)
     function! StripWhitespace()
@@ -103,17 +112,6 @@
     noremap <leader>ss :call StripWhitespace()<CR>
     " Save a file as root (,W)
     noremap <leader>W :w !sudo tee % > /dev/null<CR>
-
-    " Automatic commands
-    if has("autocmd")
-        " Enable file type detection
-        filetype on
-        " Treat .json files as .js
-        autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-    endif
-" }
-
-" Key (re)Mappings {
 
     " Easier moving in tabs and windows
     map <C-J> <C-W>j<C-W>_
