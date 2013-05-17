@@ -35,6 +35,8 @@
         set undoreload=10000        "maximum number lines to save for undo on a buffer reload
     endif
 
+    let mapleader = ','
+
 " }
 
 " Vim UI {
@@ -112,8 +114,6 @@
 " }
 
 " Key (re)Mappings {
-
-    let mapleader = ','
 
     " Easier moving in tabs and windows
     map <C-J> <C-W>j<C-W>_
