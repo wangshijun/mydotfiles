@@ -276,15 +276,15 @@
 " }
 
 " Use local vimrc if available {
-    if filereadable(expand("~/.vimrc.local"))
-        source ~/.vimrc.local
+    if filereadable(expand("$HOME/.vimrc.local"))
+        source $HOME/.vimrc.local
     endif
 " }
 
 " Use local gvimrc if available and gui is running {
     if has('gui_running')
-        if filereadable(expand("~/.gvimrc.local"))
-            source ~/.gvimrc.local
+        if filereadable(expand("$HOME/.gvimrc.local"))
+            source $HOME/.gvimrc.local
         endif
     endif
 " }
