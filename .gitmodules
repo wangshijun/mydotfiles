@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/golden-view"]
 	path = .vim/bundle/golden-view
 	url = git://github.com/zhaocai/GoldenView.Vim.git
+[submodule ".vim/bundle/vim-jade"]
+	path = .vim/bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
