@@ -263,9 +263,9 @@
 
     execute pathogen#infect()
 
-    " PowerLine Settings
-    let g:Powerline_symbols = 'fancy'
-    let g:Powerline_colorscheme = 'solarized256'
+    " airline Settings
+	let g:airline_powerline_fonts = 1
+	let g:airline#extensions#tabline#enabled = 1
 
     " tab styles
     set showtabline=2
