@@ -19,9 +19,6 @@
 [submodule ".vim/bundle/vim-powerline"]
     path = .vim/bundle/vim-powerline
     url = git://github.com/Lokaltog/vim-powerline.git
-[submodule ".vim/bundle/emmet-vim"]
-    path = .vim/bundle/emmet-vim
-    url = git://github.com/mattn/emmet-vim.git
 [submodule ".vim/bundle/golden-view"]
     path = .vim/bundle/golden-view
     url = git://github.com/zhaocai/GoldenView.Vim.git
@@ -37,3 +34,6 @@
 [submodule ".vim/bundle/vim-jsx"]
     path = .vim/bundle/vim-jsx
     url = https://github.com/mxw/vim-jsx.git
+[submodule ".vim/bundle/emmet-vim"]
+	path = .vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
