@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/editorconfig-vim"]
     path = .vim/bundle/editorconfig-vim
     url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule ".vim/bundle/vim-javascript"]
-    path = .vim/bundle/vim-javascript
-    url = https://github.com/pangloss/vim-javascript
 [submodule ".vim/bundle/vim-jsx"]
     path = .vim/bundle/vim-jsx
     url = https://github.com/mxw/vim-jsx.git
@@ -40,3 +37,9 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = https://github.com/wincent/command-t.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
