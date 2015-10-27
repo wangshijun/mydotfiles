@@ -268,6 +268,10 @@
     let g:airline#extensions#tabline#enabled = 1
     let g:airline_theme='solarized'
 
+    " syntastic settings
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+
     " tab styles
     set showtabline=2
     hi TabLineFill ctermfg=LightGreen ctermbg=235
