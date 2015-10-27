@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/vim-easymotion"]
     path = .vim/bundle/vim-easymotion
     url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule ".vim/bundle/sparkup"]
-    path = .vim/bundle/sparkup
-    url = git://github.com/rstacruz/sparkup.git
 [submodule ".vim/bundle/vim-fugitive"]
     path = .vim/bundle/vim-fugitive
     url = git://github.com/tpope/vim-fugitive.git
@@ -29,17 +26,17 @@
     path = .vim/bundle/vim-jsx
     url = https://github.com/mxw/vim-jsx.git
 [submodule ".vim/bundle/emmet-vim"]
-	path = .vim/bundle/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
+    path = .vim/bundle/emmet-vim
+    url = https://github.com/mattn/emmet-vim.git
 [submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
+    path = .vim/bundle/vim-airline
+    url = https://github.com/bling/vim-airline
 [submodule ".vim/bundle/command-t"]
-	path = .vim/bundle/command-t
-	url = https://github.com/wincent/command-t.git
+    path = .vim/bundle/command-t
+    url = https://github.com/wincent/command-t.git
 [submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+    path = .vim/bundle/syntastic
+    url = https://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/vim-javascript"]
-	path = .vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
+    path = .vim/bundle/vim-javascript
+    url = https://github.com/pangloss/vim-javascript.git
