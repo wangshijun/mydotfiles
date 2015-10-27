@@ -117,3 +117,8 @@
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
 
+[user]
+	name = wangshijun2010
+	email = wangshijun2010@gmail.com
+[push]
+	default = matching
