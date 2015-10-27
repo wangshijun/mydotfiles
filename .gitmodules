@@ -25,7 +25,7 @@
 [submodule ".vim/bundle/editorconfig-vim"]
     path = .vim/bundle/editorconfig-vim
     url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule ".vim/bundle/vim-jsx"]
+[submodule ".vim/bundle/vim-javascript"]
     path = .vim/bundle/vim-javascript
     url = https://github.com/pangloss/vim-javascript
 [submodule ".vim/bundle/vim-jsx"]
