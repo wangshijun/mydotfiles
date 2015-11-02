@@ -242,5 +242,16 @@ function o() {
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
 function tre() {
-    tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+    tree -aC -I '.git|node_modules|bower_components|.idea' --dirsfirst "$@" | less -FRNX;
+}
+
+# http://danisadesigner.com/blog/killing-livereload-server/
+lrkill() {
+    LRPID=`lsof -n -i4TCP:35729 | grep LISTEN | awk '{print $2}'`
+
+    if [ $LRPID ]
+        then
+        echo 'Killing LiveReload server (PID: '$LRPID')'
+        kill $LRPID
+    fi
 }
