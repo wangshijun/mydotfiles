@@ -293,3 +293,9 @@
         endif
     endif
 " }
+
+" CtrlP {
+    let g:ctrlp_cmd = 'CtrlP'
+    map <leader>p :CtrlP<CR>
+" }
+
