@@ -43,6 +43,3 @@
 [submodule ".vim/bundle/vim-jsbeautify"]
 	path = .vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
-[submodule ".vim/bundle/trlp.vim"]
-	path = .vim/bundle/trlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
