@@ -43,3 +43,12 @@
 [submodule ".vim/bundle/vim-jsbeautify"]
 	path = .vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule ".vim/bundle/unite.vim"]
+	path = .vim/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
+[submodule ".vim/bundle/neomru.vim"]
+	path = .vim/bundle/neomru.vim
+	url = https://github.com/Shougo/neomru.vim.git
+[submodule ".vim/bundle/neoyank.vim"]
+	path = .vim/bundle/neoyank.vim
+	url = https://github.com/Shougo/neoyank.vim.git
