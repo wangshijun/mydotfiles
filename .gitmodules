@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/neoyank.vim"]
 	path = .vim/bundle/neoyank.vim
 	url = https://github.com/Shougo/neoyank.vim.git
+[submodule ".vim/bundle/vimproc.vim"]
+	path = .vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
