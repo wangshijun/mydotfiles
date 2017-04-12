@@ -42,9 +42,6 @@
     go = checkout -B
     co = checkout
 
-    # add line number for grep
-    grep = grep -n
-
     # Show verbose output about tags, branches or remotes
     br = branch
     tags = tag -l
@@ -59,6 +56,10 @@
 
     # Undo a `git push`
     undopush = push -f origin HEAD^:master
+
+[grep]
+    # show linenumber by default when grep
+    linenumber = true
 
 [apply]
     # Detect whitespace errors when applying a patch
