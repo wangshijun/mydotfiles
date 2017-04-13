@@ -7,9 +7,6 @@
 [submodule ".vim/bundle/vim-fugitive"]
     path = .vim/bundle/vim-fugitive
     url = git://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/snipmate.vim"]
-    path = .vim/bundle/snipmate.vim
-    url = git://github.com/msanders/snipmate.vim.git
 [submodule ".vim/bundle/tcomment_vim"]
     path = .vim/bundle/tcomment_vim
     url = git://github.com/tomtom/tcomment_vim.git
@@ -58,3 +55,24 @@
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/bundle/auto-pairs"]
+	path = .vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/bundle/vim-closetag"]
+	path = .vim/bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule ".vim/bundle/vim-snipmate"]
+	path = .vim/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule ".vim/bundle/vim-addon-mw-utils"]
+	path = .vim/bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule ".vim/bundle/tlib_vim"]
+	path = .vim/bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
